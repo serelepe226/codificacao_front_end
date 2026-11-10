@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+    <body>
+
+    <!--Formulario que envia para "index5.html" do Siricutico-->
+        <form action="index5.html" method="post">
+
+            <label for="nomeCompleto">Nome Completo</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto">
+
+            <!--E-mail do Siricutico-->
+            <label>
+                E-mail
+                <input type="email" name="emailDoUsuario">
+            </label>
+
+            <!--Data de Nascimento do Siricutico-->
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento">
+
+            <!--Idade do Siricutico-->
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade">
+
+            <!--Senha do Siricutico-->
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha">
+
+            <!--Anexar Currículo do Siricutico-->
+            <label for="curriculo">Currículo</label>
+            <input type="file" id="curriculo" name="curriculo" accept=".pdf">
+
+            <!--Telefone do Siricutico-->
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <!--URL do Siricutico-->
+            <label for="url">Url</label>
+            <input type="url" id="url" name="url">
+
+            <!--Tempo do Siricutico-->
+            <label for="tempo">Tempo</label>
+            <input type="time" id="tempo" name="tempo">
+
+            <!--Data local do Siricutico-->
+            <label for="datalocal">Data Local</label>
+            <input type="datetime-local" id="datalocal" name="datalocal">
+
+            <!--Mês do Siricutico-->
+            <label for="mes">Mês</label>
+            <input type="month" id="mes" name="mes">
+
+            <!--Semana do Siricutico-->
+            <label for="semana">Semana</label>
+            <input type="week" id="semana" name="semana">
+
+            <!--Cor do Siricutico-->
+            <label for="color">Cor</label>
+            <input type="color" id="color" name="color">
+
+            <!--Alcance do Siricutico-->
+            <label for="range">Alcançe</label>
+            <input type="range" id="range" name="range">
+
+            <!--Pesquisa do Siricutico-->
+            <label for="pesquisa">Pesquisa</label>
+            <input type="search" id="pesquisa" name="pesquisa">
+
+            <br>
+            <br>
+
+            <!--Checkbox do Siricutico-->
+
+            <p>Quais Tecnologias você conhece?</p>
+
+            <label>
+
+                <input type="checkbox" name="tecnologia" value="html">
+                HTML
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="checkbox" name="tecnologia" value="css">
+                CSS
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="checkbox" name="tecnologia" value="javascript">
+                Javascript
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="checkbox" name="tecnologia" value="siricutico">
+                Siricutico
+
+            </label>
+
+            <!--Radio de Siricutico-->
+
+            <p>Qual é sua cor favorita</p>
+
+            <label>
+
+                <input type="radio" name="cor" value="azul">
+                Azul
+
+            </label>
+            
+            <br>
+
+            <label>
+
+                <input type="radio" name="cor" value="roxo">
+                Roxo
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="radio" name="cor" value="laranja">
+                Laranja
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="radio" name="cor" value="ciano">
+                Ciano
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="radio" name="cor" value="verde">
+                Verde
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="radio" name="cor" value="marrom">
+                Marrom
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="radio" name="cor" value="rosa">
+                Rosa
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="radio" name="cor" value="vermelho">
+                Vermelho
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="radio" name="cor" value="lilás">
+                Lilás
+
+            </label>
+
+            <br>
+            <br>
+            <br>
+
+            <!--Botão de enviar do Siricutico-->
+            <button type="submit">Enviar</button>            
+
+        </form>
+
+        <form action="index.html" method="post">
+
+            <label for="curso">Curso</label>
+
+            <select id="curso" name="curso">
+
+                <option value="">Selecione...</option>
+
+                <option value="informatica">Informática</option>
+
+                <optgroup label="Gestão">
+
+                    <option value="adm">Administração</option>
+                    <option value="contabeis">Ciências Contáveis</option>
+
+                </optgroup>
+
+            </select>
+
+            <label for="cidade"></label>
+            <br>
+            <input list="cidades" id="cidade" name="cidade">
+            <br>
+            <datalist id="cidades">
+
+                <option value="Chapecó">
+                    <br>
+                <option value="Joinville">
+                    <br>
+                <option value="Florianópolis">
+                    <br>
+                <option value="Siricutico">
+                
+            </datalist>
+
+            <!--Botão de enviar do Siricutico-->
+            <button type="submit">Enviar</button>
+
+        </form>
+    
+    </body>
+</html>  
