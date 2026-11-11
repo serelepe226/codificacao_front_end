@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+    <body>
+
+        <form action="index6.html" method="post">
+
+            <!--Campo separado de formulário com borda em volta-->
+            <fieldset>
+
+                <legend>Dados Básicos de Siricutico</legend>
+
+                <label for="nomeCompleto">NomeCompleto</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto">
+
+                <label for="emailDoUsuario">E-mail</label>
+                <input type="email" id="emailDoUsuario" name="emailDoUsuario">
+
+            </fieldset>
+
+            <!--Cep do siricutico-->
+            <label for="cep">CEP de Siricutico</label>
+            <input type="text" id="cep" name="cep" 
+            pattern="[0-9]{5}-[0-9]{3}" 
+            placeholder="00000-000" 
+            title="Formato: 00000-000" 
+            required>
+
+            <br>
+
+            <!--Campo de dados, 5 linhas, 40 colunas, min. de caracteres 3 e max. de caracteres 500-->
+            <!--"autofocus" foca automaticamente naquele campo-->
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" minlength="3" maxlength="500" autofocus></textarea>
+
+            <br>
+
+            <!--Campo de numeros de min. 1 número e max. 10 números-->
+            <label for="numero">Número</label>
+            <input type="number" id="numero" name="numero" min="1" max="10">
+
+            <br>
+
+            <!--Campo Oculto (readonly)-->
+            <label for="campoOculto">Campo Oculto</label>
+            <input type="text" id="campoOculto" name="campoOculto" readonly>
+
+            <br>
+
+            <!--Campo desabilitado (disabled)-->
+            <label for="campoDesabilitado">Campo Desabilitado</label>
+            <input type="text" id="campoDesabilitado" name="campoDesabilitado" disabled>
+
+            <br>
+
+            <!--E-mail com autocomplete-->
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            
+            <br>
+
+            <!--Botões de enviar e de limpar os dados-->
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+        </form>
+
+    </body>
+
+</html>
